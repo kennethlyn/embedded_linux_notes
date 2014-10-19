@@ -1,0 +1,100 @@
+  855  mv radius round
+  856  cd rls
+  857  ls
+  858  rm radius1/-r
+  859  rm radius1 -r
+  860  y
+  861  cd r
+  862  rm radius1 -rf
+  863  cd round/
+  864  ls
+  865  cd ls
+  866  ls
+  867  cd ..
+  868  ls
+  869  cd round/
+  870  ls
+  871  vi main.c 
+  872  ls
+  873  mv circle.c area.c volume.c tmp
+  874  mkdir tmp
+  875  mv circle.c area.c volume.c tmp
+  876  ls
+  877  cp tmp/* 
+  878  ls
+  879  cd tmp/
+  880  ls
+  881  cd -
+  882  ls
+  883  cp tmp/* .
+  884  ls
+  885  vi /etc/ld.so.conf
+  886  lllll
+  887  cd ..
+  888  ld
+  889  cd /work/
+  890  ls
+  891  mkdir lib
+  892  mkdir include 
+  893  ls
+  894  cd c/round/
+  895  ls
+  896  gcc -fpic -shared  circle.c area.c volume.c -o libround.so -Wall -O3
+  897  ls
+  898  rm area.c circle.c volume.c 
+  899  ls
+  900  rm area.c 
+  901  ls
+  902  gcc main.c 
+  903  gcc main.c  -I.
+  904  gcc main.c  -I. -L.
+  905  gcc main.c  -I. -lround
+  906  gcc main.c  -I. -L. -lround
+  907  gcc main.c  -I. -L. -lround -lm
+  908  ls
+  909  rm a.out 
+  910  gcc main.c -Wall -O3 -o round -I. -L. -lround -lm 
+  911  ls
+  912  ./round 
+  913  cp libround.so /lib/
+  914  ./round 
+  915  rm /lib/libround.so 
+  916  ls
+  917  vi /etc/ld.so.conf
+  918  ./round 
+  919  ldconfig 
+  920  ./round 
+  921  ls
+  922  mv libround.so /work/lib/
+  923  mv round.h /work/include/
+  924  ls
+  925  rm round 
+  926  gcc main.c 
+  927  gcc main.c -I/work/include
+  928  gcc main.c -Wall -O3 -o round  -I/work/include 
+  929  gcc main.c -Wall -O3 -o round  -I/work/include -L/work/lib
+  930  gcc main.c -Wall -O3 -o round  -I/work/include -lround
+  931  gcc main.c -Wall -O3 -o round  -I/work/include -lround -L/work/lib
+  932  gcc main.c -Wall -O3 -o round  -I/work/include -lround -L/work/lib -lm
+  933  ./round 
+  934  vi /etc/ld.so.conf
+  935  ldconfig
+  936  ./round 
+  937  ls
+  938  rm round 
+  939  ls
+  940  gcc -Wall -O3 main.c -o round 
+  941  gcc -Wall -O3 main.c -o round -lround
+  942  gcc -Wall -O3 main.c -o round -l/work/include
+  943  gcc -Wall -O3 main.c -o round -I/work/include
+  944  gcc -Wall -O3 main.c -o round -I/work/include -lround
+  945  gcc -Wall -O3 main.c -o round -I/work/include -lround -L/work/lib
+  946  gcc -Wall -O3 main.c -o round -I/work/include  -L/work/lib -lround 
+  947  gcc -Wall -O3 main.c -o round -I/work/include  -L/work/lib -lround -lm
+  948  ./round 
+  949  mkdir /work/tmp
+  950  history | tail > history_lib
+  951  ls
+  952  mv history_lib /work/tmp/
+  953  vi /work/tmp/history_lib 
+  954  history | tail -100 > history_lib

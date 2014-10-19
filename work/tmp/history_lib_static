@@ -1,0 +1,100 @@
+  932  gcc main.c -Wall -O3 -o round  -I/work/include -lround -L/work/lib -lm
+  933  ./round 
+  934  vi /etc/ld.so.conf
+  935  ldconfig
+  936  ./round 
+  937  ls
+  938  rm round 
+  939  ls
+  940  gcc -Wall -O3 main.c -o round 
+  941  gcc -Wall -O3 main.c -o round -lround
+  942  gcc -Wall -O3 main.c -o round -l/work/include
+  943  gcc -Wall -O3 main.c -o round -I/work/include
+  944  gcc -Wall -O3 main.c -o round -I/work/include -lround
+  945  gcc -Wall -O3 main.c -o round -I/work/include -lround -L/work/lib
+  946  gcc -Wall -O3 main.c -o round -I/work/include  -L/work/lib -lround 
+  947  gcc -Wall -O3 main.c -o round -I/work/include  -L/work/lib -lround -lm
+  948  ./round 
+  949  mkdir /work/tmp
+  950  history | tail > history_lib
+  951  ls
+  952  mv history_lib /work/tmp/
+  953  vi /work/tmp/history_lib 
+  954  history | tail -100 > history_lib
+  955  vi /work/tmp/history_lib 
+  956  ls
+  957  mv history_lib /work/tmp/
+  958  ls
+  959  vi /work/tmp/history_lib 
+  960  ls
+  961  cd
+  962  fdisk -l
+  963  mount /dev/sda1 /mnt/usb/
+  964  cd /mnt/usb/
+  965  sl
+  966  ls
+  967  umount /mnt/usb/
+  968  cd 
+  969  umount /mnt/usb/
+  970  mount /dev/sda1 /mnt/usb/
+  971  fdisk -l
+  972  fdisk -l
+  973  fdisk -l
+  974  fdisk -l
+  975  clear
+  976  cd w
+  977  cd /work/
+  978  ls
+  979  cd c/round/
+  980  ls
+  981  ./round 
+  982  fdisk -l
+  983  fdisk -l
+  984  fdisk -l
+  985  fdisk -l
+  986  fdisk -l
+  987  fdisk -l
+  988  fdisk -l
+  989  mount /dev/sda1 /mnt/usb/
+  990  ls
+  991  tree
+  992  ll
+  993  tree /work/
+  994  clear
+  995  clear
+  996  clear
+  997  tail -n20 /work/tmp/history_lib 
+  998  ll
+  999  ll -h
+ 1000  ls
+ 1001  lld round 
+ 1002  ldd round 
+ 1003  cd ..
+ 1004  ls
+ 1005  gcc sin.c 
+ 1006  ls-lm
+ 1007  gcc sin.c  -lm
+ 1008  ls
+ 1009  ldd a.out 
+ 1010  cd round/tmp/
+ 1011  ls
+ 1012  gcc -Wall -O3 *.c -c
+ 1013  ls
+ 1014  ar -r *.o libround.a
+ 1015  echo $?
+ 1016  ar -r *.o libround.a
+ 1017  ar -r libround.a *.o
+ 1018  ls
+ 1019  mv libround.a ..
+ 1020  ls
+ 1021  cd ..
+ 1022  ls
+ 1023  gcc -Wall -O3 -s main.c -o round_static -L/work/round
+ 1024  gcc -Wall -O3 -s main.c -o round_static -L/work/round -I/work/include
+ 1025  gcc -Wall -O3 -s main.c -o round_static -L/work/round -I/work/include -lround
+ 1026  gcc -Wall -O3 -s main.c -o round_static -L/work/round -I/work/include -lround -lm
+ 1027  gcc -Wall -O3 -s main.c -o round_static -L/work/c/round -I/work/include -lround -lm
+ 1028  ls
+ 1029  ldd round_static 
+ 1030  ldd round
+ 1031  history | tail -100 > /work/tmp/history_lib_static
